@@ -1,25 +1,16 @@
-import Bg from '@/components/bg'
+'use client'
+import ParticleBackground from '@/components/ParticleBackground'
+import Provider from '@/components/provider'
+import SvgParticles from '@/components/SvgParticles'
 import React from 'react'
+import { ParallaxProvider } from 'react-scroll-parallax'
 
-const Page = () => {
+const page = () => {
   return (
-    <div>
-      <Bg/>
-      <div className='w-full h-screen bg-[#9D6D12] text-center space-y-4 p-4 text-white text-lg z-10 relative'>
-        <p>This is a description of the background component.</p>
-        <p>It showcases a neon glow text effect with a scenic background.</p>
-        <p>The background image is set to cover the entire viewport.</p>
-        <p>The text has a glowing effect achieved through CSS text-shadow.</p>
-        <p>The component is designed to be responsive and visually appealing.</p>
-        <p>Feel free to customize the text and background images as needed.</p>
-        <p>Enjoy the vibrant and dynamic look of the neon glow text!</p>
-        <p>Explore more components and styles in the project.</p>
-        <p>Thank you for checking out this example!</p>
-        <p>Have a great day!</p>
-
-      </div>
+    <div className='h-screen w-full flex items-center justify-center relative'>
+      <SvgParticles/>
     </div>
   )
 }
 
-export default Page
+export default page
